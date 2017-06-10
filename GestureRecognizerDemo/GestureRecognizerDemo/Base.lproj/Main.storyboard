@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Tfz-JF-KdU">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="lGQ-FS-5LV">
+            <objects>
+                <navigationController id="Tfz-JF-KdU" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="6V4-Lg-YFB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nwk-Qa-5Lc" kind="relationship" relationship="rootViewController" id="tBe-8L-7Md"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6gf-dM-71E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-657" y="126"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="V0J-tP-jWP">
+            <objects>
+                <viewController id="nwk-Qa-5Lc" customClass="ViewController" customModule="GestureRecognizerDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9OF-O6-tt3"/>
+                        <viewControllerLayoutGuide type="bottom" id="fpn-3j-hp1"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="KOW-TE-cBJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TYK-4H-Gwx">
+                                <rect key="frame" x="37" y="183.5" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="HUQ-0g-H3I"/>
+                                    <constraint firstAttribute="height" constant="300" id="fcT-yj-iue"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TYK-4H-Gwx" firstAttribute="centerY" secondItem="KOW-TE-cBJ" secondAttribute="centerY" id="AEc-ej-BwR"/>
+                            <constraint firstItem="TYK-4H-Gwx" firstAttribute="centerX" secondItem="KOW-TE-cBJ" secondAttribute="centerX" id="WtQ-QU-nMh"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="uM1-XJ-Ytt"/>
+                    <connections>
+                        <outlet property="imageView" destination="TYK-4H-Gwx" id="9fL-xq-oju"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W89-Mj-Pxl" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="98" y="125"/>
+        </scene>
+    </scenes>
+</document>
